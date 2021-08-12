@@ -20,7 +20,7 @@ html {
 
 // Utility styles
 
-h1, h4 {
+h1, h2 {
   color: $darkBlue;
   font-weight: 900;
 }
@@ -104,6 +104,10 @@ body {
   .priceBox {
     margin-left: 2rem;
 
+    .planPeriod {
+      font-size: 1.6rem;
+    }
+
  
   }
 
@@ -118,9 +122,7 @@ body {
       color: hsl(245, 75%, 62%);
     }
 
-    &:active {
-      transform: translateY(2px);
-    }
+    
   }
 
 }
@@ -158,9 +160,7 @@ body {
     color: $darkBlue;
   }
 
-  &:active {
-    transform: translateY(2px);
-  }
+ 
 }
 
 
