@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/danieldudu/Order-summary-card)
+- Live Site URL: [Add live site URL here](https://order-summary-card-delta.vercel.app/)
 
 ## My process
 
