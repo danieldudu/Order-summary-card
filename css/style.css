@@ -111,6 +111,7 @@ body {
 
 .card {
   max-width: 375px;
+  margin: 1rem .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
