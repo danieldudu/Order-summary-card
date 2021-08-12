@@ -1,0 +1,168 @@
+// Import CSS reset
+
+@import 'reset';
+
+
+
+// Variables
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$lightPaleblue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue:  hsl(223, 47%, 23%);
+
+// Font size
+
+html {
+  font-size: 62.5%;
+}
+
+
+// Utility styles
+
+h1, h4 {
+  color: $darkBlue;
+  font-weight: 900;
+}
+
+.card, 
+.btn {
+  border-radius: 1.6rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Red Hat Display', sans-serif;
+  display: grid;
+  place-content: center;
+  background: url(/images/pattern-background-mobile.svg) $paleBlue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media  screen and(min-width:800px) {
+    background: url(/images/pattern-background-desktop.svg) $paleBlue;
+    background-repeat: no-repeat;
+
+  }
+  
+}
+
+.card {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  
+}
+
+.cardHero {
+  margin-bottom: 1.6rem;
+
+  & img {
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+  }
+}
+
+
+.cardContent {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  // padding: 0.1rem;
+  color: $desaturatedBlue;
+
+  .title {
+    color: $darkBlue;
+    font-size: 2rem;
+  }
+
+  .text {
+    width: 25ch;
+    // line-clamp: 4;
+    // padding: 1.2rem 0;
+    
+  }
+}
+
+.pricingCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: $lightPaleblue;
+  padding: 1.6rem;
+  width: 320px;
+  // margin-bottom: 1.6rem;
+  border-radius: 1.6rem;
+
+  .priceBox {
+    margin-left: 2rem;
+
+ 
+  }
+
+  .changeLink {
+    margin-left: 6rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+  
+
+    &:hover {
+      text-decoration: none;
+      color: hsl(245, 75%, 62%);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+}
+
+
+.btn {
+  padding: 0.9em 1.7em;
+  width: 320px;
+  border: none;
+  background-color: $brightBlue;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: hsl(245, 75%, 95%) 0px 2px 1px, hsl(245, 75%, 95%) 0px 4px 2px, hsl(245, 75%, 95%) 0px 8px 4px, hsl(245, 75%, 95%) 0px 16px 8px, hsl(245, 75%, 95%) 0px 16px 16px;
+  transition: transform ease-out;
+
+  &:hover {
+    background-color: hsl(245, 75%, 62%); 
+   
+  }
+
+  &:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+}
+
+.cancelOrder {
+  padding-bottom: 2rem;
+  text-decoration: none;
+  color: $desaturatedBlue;
+
+  &:hover {
+    font-weight: 700;
+    color: $darkBlue;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+
+.attribution {
+  margin-top: 4rem;
+}
